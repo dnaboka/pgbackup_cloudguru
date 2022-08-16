@@ -14,6 +14,7 @@ setup(
         url='git@github.com:dnaboka/pgbackup_cloudguru.git',
         packages=find_packages('src'),
         package_dir={'': 'src'},
+        python_requires='>=3.6',
         install_requires=['boto3'],
         entry_points={
             'console_scripts': ['pgbackup=pgbackup.cli:main']
